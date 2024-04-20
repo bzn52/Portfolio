@@ -1,20 +1,20 @@
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 
-let sevtions = document.querySelectorAll('section');
-let nevLinks = document.querySelectorAll('header nav ul li a');
+let Section = document.querySelectorAll('section');
+let Navlinks = document.querySelectorAll('header nav a');
 
 window.onscroll = () => {
-    sections.forEach(sec => {
+    Section.forEach(sec => {
         let top = window.scrollY;
-        let offset = sec.offsetTop -150;
+        let offset = sec.offsetTop;
         let height = sec.offsetHeight;
         let id = sec.getAttribute('id');
         
         if(top >= offset && top < offset+height) {
-            navLinks.forEach(links => {
+            Navlinks.forEach(links => {
                 links.classList.remove('active');
-                document.querySelectior('header nav ul li a[href*=' + id + ' ]').classList.add(active)
+                document.querySelector('header nav a[href*=' + id + ' ]').classList.add('active');
             })
         }
     })

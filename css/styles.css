@@ -80,7 +80,6 @@ html::-webkit-scrollbar-thumb {
 .navbar a:hover,
 .navbar a.active {
     color: var(--main-color);
-    border-bottom: 3px solid var();
 }
 
 #menu-icon {
@@ -338,8 +337,8 @@ span {
 
 .services-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     align-items: center;
+    grid-template-columns: repeat(3, 1fr);
     gap: 2.5rem;
 }
 
@@ -364,7 +363,7 @@ span {
     text-align: left;
     max-height: 200px;
     justify-content: center;
-    align-items: center;
+    align-items: baseline;
     padding: 5rem;
 }
 
@@ -408,7 +407,7 @@ span {
 }
 
 .skills .container {
-    background: #e1362c54;
+    background: #5a00ea54;
     color: var(--text-color);
     border-radius: 1rem;
     padding: 2rem;
@@ -735,18 +734,6 @@ span {
     text-align: center;
     font-size: 16px;
     color: black;
-}
-
-@media (max-width:1285px) {
-    html {
-        font-size: 55%;
-    }
-
-    .services-container {
-        padding-bottom: 7rem;
-        grid-template-columns: repeat(1, 1fr);
-        margin: 0 5rem;
-    }
 }
 
 @media (max-width:991px) {
